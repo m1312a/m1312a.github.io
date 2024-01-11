@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Marhey:wght@300&display=swap');
+*{
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+}
+body{
+    font-family: 'Marhey', sans-serif;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(46, 13, 138);
+}
+.title{
+
+    margin:20px 0;
+}
+.main{
+  border:8px solid #272323;
+  border-radius: 24px;
+  overflow:hidden;
+}
+.name{
+    display:flex;
+    font-size: 32px;
+    font-weight: 700;
+    padding: 8px 16px ;
+    color:#6a59b3;
+    background-color: #6a59b3;
+}
+.name-input{
+    font-size: 24px;
+    font-weight: 700;
+    color:#6a59b3;
+    flex-grow:1;
+    border:none;
+    margin:0px 12px;
+    outline:none;
+    background-color: #c284af;
+}
+.message-container{
+
+    display:flex;
+    flex-direction: column;
+    background-color: #52153f;
+    width:400px;
+    height:600px;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+.message-left , .message-right{
+    list-style: none;
+    padding :8px 12px;
+    margin: 12px;
+    max-width: 250px;
+    font-size: 18px;
+    word-wrap: break-word;
+}
+.message-left{
+    border-radius:20px 20px 20px 0px;
+    align-self: flex-start;
+    background-color: black;
+    box-shadow: -2px 2px 4px #4c0d75;
+    color:#4c0d75
+}
+.message-right{
+    border-radius:20px 20px 20px 0px;
+    align-self: flex-end;
+    background-color: black;
+    box-shadow: -2px 2px 4px #4c0d75;
+    color:#4c0d75
+}
+.message-left > p > span , .message-right > p > span{
+    display: block;
+    font-style: italic;
+    font-size: 12px ;
+    margin-top: 4px;
+}
+.feedback{
+    font-style: italic;
+    font-size: 14px;
+    padding:0px 16px 16px 16px;
+    color:#050202;
+    text-align: center;
+    position: relative;
+}
+.message-form{
+ display:flex;
+ justify-content:space-between;
+ width:400px;
+}
+.message-input{
+ flex-grow:1;
+ height: 48px;
+ font-size:  16px;
+ border:none;
+ outline:none;
+ padding: 0 12px;
+ background-color:#050202;
+ color:rgb(133, 18, 99);
+}
+.send-button{
+    height:48px;
+    font-size:16px;
+    border:none;
+    padding:0px 20px;
+    outline:none;
+    background-color:#fff;
+    cursor:pointer;
+}
+.v-divider{
+    height:48px;
+    width:2px;
+    background-color: aqua;
+}
+.client-total{
+    margin: 20px 0;
+    color: #050202;
+}
